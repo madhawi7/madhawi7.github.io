@@ -1,0 +1,53 @@
+body{
+    background-image: url("logo1.jpeg");
+    background-position:top right;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: 200px;
+    background-color: #E6E6E6;
+    
+}
+h1,h2,h3,h5{
+    color:#550080;
+}
+ol{
+    list-style-type: upper-roman;
+}
+ol ol{
+    list-style-type: lower-roman;
+}
+ul{
+    list-style-type:square ;
+}
+a:link{
+    text-decoration: none;
+    color: blue;
+}
+    
+a:visited{
+    text-decoration: none;
+    color: red;
+}
+    a:hover {
+    text-decoration: underline;
+    color: green;
+    }
+    
+    a:active {
+    text-decoration: underline;
+    color: black;
+    }
+    p.Aclass{
+        font-size: medium;
+        color:#7700b3 ;
+    }
+    p.Bclass{
+        font-size: large;
+        color: #330044;
+    }
+    p.Dclass{
+font-size: small;
+color: #c44dff;
+    }
+    
+   

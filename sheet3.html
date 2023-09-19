@@ -1,0 +1,106 @@
+<html>
+    <head>
+<title>sheet3</title>
+<link rel="stylesheet" type="text/css" href="StyleSheet1.css">
+
+<style>
+ body{
+        background-color:#E6E6E6;
+    }
+
+</style>
+</head>
+<body>
+
+<h2>CV FORM</h2>
+<form>
+    <fieldset>
+        <legend>Personal Information:</legend>
+    
+<p>
+        <label> Name:<br>
+            <input name = "name" type="text">
+        </label>
+</p>
+<p>
+        <label for="gender">Gender:</label>
+
+            <input name="gender" type="radio" id="male" value="male">
+            <label for="male">Male</label>
+
+            <input name="gender" type="radio" id="female" value="female">
+            <label for="female">Female</label>
+</p>
+<p>
+        <label for="phone">Enter your phone number:</label><br>
+        <br><input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="555-55-555">
+        <small>Format:555-55-555</small><br>
+</p>
+
+<p>
+        <label>Your linkedin page:</label>
+        <input type="url" id="linkedin" name="linkedin">
+        <label>Email</label>
+        <input type="email" id="email" name="email">
+</p>
+
+</fieldset>
+<p>
+<label for="experise"> Years of experise (between 3 and 10):</label>
+<input type="number" max="10" min="3"required/>
+</p>
+
+
+<p>
+<label >expected salary:</label>
+4000<input type="range" min="4000" max="10000" id="salary" name="salary"  value="5000" steps="1000">10000
+</p>
+
+<p>
+    <label>languge:</label><br>
+
+        <input name="Arabic" type="checkbox" id="Arabic" value="Arabic" >
+        <label for="Arabic">Arabic</label><br>
+
+        <input name="" type="checkbox" id="English" value="English">
+        <label for="English">English</label>
+</p>
+
+<p>
+<label>Uplaod your CV: </label>
+<input type="file" id="cv" name="filename">
+</p>
+
+
+<p>
+        <label>The nearest week you can start work</label>
+        <input id="week" type="week"></p>
+ <p>
+        <label for="month">The nearest month you can start work</label>
+        <input id="month" type="month"></p>
+<p>
+        <label for="time">The best time to work</label>
+        <input id="time" type="time"></p>
+
+        <p>
+
+            <label for="cars">Choose a car:</label>
+
+            <select name="major" id="majors">
+            <option value="cs">cs</option>
+            <option value="it">it</option>
+            <option value="ii">ii</option>
+             <option value="dd">dd</option>
+            </select>
+        </p>
+<p>
+
+<label>why you want to work with us</label><br>
+
+<textarea id="work" name="work" rows="6" cols="60">
+    </textarea>
+</p>
+
+</body>
+</form>
+</html>
