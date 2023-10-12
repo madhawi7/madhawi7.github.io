@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BMI calculator creating using JavaScript</title> 
+  </head>
+  <body>
+    <h1>BMI calculator creating using JavaScript</h1> 
+    <from>
+     <label>your Weight(kg):</label> 
+     <input type="number" id="weight"><br><br>
+     <label>your Height(kg):</label> 
+     <input type="number" id="height"><br><br>
+     <input type="button" value="calculate BMI" onclick="BMIcalculator()"><br>  
+     </from>
+     <p><span id="yourBMI"> </span></p>
+     <p>This Means:<span id="ThisMeans"> </span></p>
+    
+
+
+
+     <script>
+        function BMIcalculator()
+        {
+        
+                var weight =parseInt(document.getElementById("weight").value); 
+                var height =parseInt(document.getElementById("height").value); 
+        
+                var BMI = weight/(height * height/10000);
+                var means;
+        
+                       if (BMI< 18.5) {
+                        means= " underweight ):";
+                        } else if (BMI >= 18.5 && BMI <= 24.9) {
+                        means = "Healthy Weight!!";
+        
+                        } else if ( BMI>= 25 && bmi <= 29.9) {
+                        means= " Overweight";
+        
+                        } else {
+                        means = "obesity";
+                        }
+        
+                document.getElementById("yourBMI").innerHTML = "Your BMI: " + BMI;
+                document.getElementById("ThisMeans").innerHTML = "Your BMI: " + means;
+        }
+        
+        
+            </script>
+  </body>
+
+</html>
+
+
